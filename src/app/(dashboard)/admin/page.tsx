@@ -1,4 +1,4 @@
-import UserCard from "@/app/components/UserCard"
+import UserCard from "@/components/UserCard"
 
 const page = () => {
     return (
