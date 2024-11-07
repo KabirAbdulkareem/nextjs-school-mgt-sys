@@ -11,17 +11,17 @@ import {
 const data = [
   {
     name: "Total",
-    count: 106,
+    count: 2834,
     fill: "#fff",
   },
   {
     name: "Girls",
-    count: 53,
+    count: 1600,
     fill: "#c3ebfa",
   },
   {
     name: "Boys",
-    count: 53,
+    count: 1234,
     fill: "#fae27c",
   },
 ];
@@ -62,7 +62,7 @@ const CountChart = () => {
       <div className="flex justify-center gap-16">
         <div className="flex flex-col gap-1">
           <div className="w-5 h-5 bg-kbSky rounded-full" />
-          <h1 className="font-bold">1,234</h1>
+          <h1 className="font-bold">1,600</h1>
           <h2 className="text-xs text-gray-300">Girls (55%)</h2>
         </div>
         <div className="flex flex-col gap-1">
