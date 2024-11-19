@@ -26,9 +26,8 @@ const TeacherListPage = () => {
       {/* LIST */}
       <div className=""></div>
       {/* PAGINATION */}
-      <div className="">
-        <Pagination />
-      </div>
+
+      <Pagination />
     </div>
   );
 };
