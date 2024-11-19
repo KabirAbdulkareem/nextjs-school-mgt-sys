@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalender";
 import EventCalendar from "@/components/EventCalendar";
 
-const page = () => {
+const StudentPage = () => {
   return (
     <div className="p-4 flex gap-4 flex-col xl:flex-row">
       {/* LEFT */}
@@ -23,4 +23,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default StudentPage;
