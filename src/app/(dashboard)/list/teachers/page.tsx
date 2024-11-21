@@ -1,8 +1,62 @@
 import Pagination from "@/components/Pagination";
+import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
 import Image from "next/image";
 
+export type Teacher = {
+  id: number;
+  teacherId: number;
+  name: string;
+  email?: string;
+  photo: string;
+  phone: string;
+  subjects: string[];
+  classes: string[];
+  address: string;
+};
+
+const columns = [
+  {
+    header: "Info",
+    accessor: "info",
+  },
+  {
+    header: "Teacher ID",
+    accessor: "teacherId",
+    className: "hidden md:table-cell",
+  },
+  {
+    header: "Subjects",
+    accessor: "subjects",
+    className: "hidden md:table-cell",
+  },
+  {
+    header: "Classes",
+    accessor: "classes",
+    className: "hidden md:table-cell",
+  },
+  {
+    header: "Phone",
+    accessor: "phone",
+    className: "hidden lg:table-cell",
+  },
+  {
+    header: "Address",
+    accessor: "address",
+    className: "hidden lg:table-cell",
+  },
+  {
+    header: "Actions",
+    accessor: "action",
+  },
+];
+
 const TeacherListPage = () => {
+  const renderRow = (item: Teacher) => (
+    <tr>
+      <td>{item.name}</td>
+    </tr>
+  );
   return (
     <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
       {/* TOP */}
@@ -24,6 +78,7 @@ const TeacherListPage = () => {
         </div>
       </div>
       {/* LIST */}
+      <Table columns={columns} renderRow={renderRow} />
       <div className=""></div>
       {/* PAGINATION */}
 
