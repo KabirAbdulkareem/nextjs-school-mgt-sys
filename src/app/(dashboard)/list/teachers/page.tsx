@@ -17,6 +17,12 @@ export type Teacher = {
   address: string;
 };
 
+export type Column = {
+  header: string,
+  accessor: string,
+  className?: string,
+}
+
 const columns = [
   {
     header: "Info",

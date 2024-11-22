@@ -10,8 +10,8 @@ const Table = ({
     accessor: string;
     className?: string;
   }[];
-  renderRow:(item:any)=>React.ReactNode;
-  data: any[]
+  renderRow:(item:Teacher)=>React.ReactNode;
+  data: Teacher[]
 }) => {
   return (
     <table className="w-full mt-4">
