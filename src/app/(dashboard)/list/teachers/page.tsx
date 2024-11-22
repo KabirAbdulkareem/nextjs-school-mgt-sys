@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export type Teacher = {
   id: number;
-  teacherId: number;
+  teacherId: number|string;
   name: string;
   email?: string;
   photo: string;
