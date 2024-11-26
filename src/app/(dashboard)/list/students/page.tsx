@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export type Student = {
   id: number;
-  studentId: number | string;
+  studentId: string;
   name: string;
   email?: string;
   photo: string;
@@ -120,7 +120,6 @@ const StudentListPage = () => {
       </div>
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={studentsData} />
-      <div className=""></div>
       {/* PAGINATION */}
 
       <Pagination />

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export type Teacher = {
   id: number;
-  teacherId: number|string;
+  teacherId: string;
   name: string;
   email?: string;
   photo: string;
@@ -119,7 +119,6 @@ const TeacherListPage = () => {
       </div>
       {/* LIST */}
       <Table columns={columns} renderRow={renderRow} data={teachersData}  />
-      <div className=""></div>
       {/* PAGINATION */}
 
       <Pagination />
