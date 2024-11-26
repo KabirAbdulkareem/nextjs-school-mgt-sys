@@ -1,3 +1,4 @@
+import { Student } from "@/app/(dashboard)/list/students/page";
 import { Teacher } from "@/app/(dashboard)/list/teachers/page";
 
 const Table = ({
@@ -10,8 +11,8 @@ const Table = ({
     accessor: string;
     className?: string;
   }[];
-  renderRow:(item:Teacher)=>React.ReactNode;
-  data: Teacher[]
+  renderRow:(item:any)=>React.ReactNode;
+  data: Teacher[]|Student[]
 }) => {
   return (
     <table className="w-full mt-4">
