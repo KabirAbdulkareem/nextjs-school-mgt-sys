@@ -12,7 +12,7 @@ const Table = ({
     className?: string;
   }[];
   renderRow:(item:any)=>React.ReactNode;
-  data: Teacher[]|Student[]
+  data: any[]
 }) => {
   return (
     <table className="w-full mt-4">
