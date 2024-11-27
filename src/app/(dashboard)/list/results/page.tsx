@@ -56,7 +56,7 @@ const columns = [
   },
 ];
 
-const ResultPage = () => {
+const ResultListPage = () => {
   const renderRow = (item: Result) => {
     return (
       <tr
@@ -120,4 +120,4 @@ const ResultPage = () => {
   );
 };
 
-export default ResultPage;
+export default ResultListPage;
