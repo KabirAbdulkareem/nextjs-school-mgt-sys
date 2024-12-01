@@ -1,6 +1,7 @@
 "use client";
 import Announcements from "@/components/Announcements";
 import BigCalendar from "@/components/BigCalender";
+import Performance from "@/components/Performance";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -125,6 +126,7 @@ const SingleTeacherPage = () => {
           <Link className="p-4 rounded-md bg-kbSkyLight" href="/">Teacher&apos;s Assignments</Link>
           </div>
         </div>
+        <Performance />
         <Announcements />
       </div>
     </div>
