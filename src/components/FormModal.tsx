@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import TeacherForm from "./form/TeacherForm";
 
 function FormModal({
   table,
@@ -45,7 +46,7 @@ function FormModal({
         </button>
       </form>
     ) : (
-      "create or update form"
+      <TeacherForm type="create" />
     );
   };
 
@@ -63,7 +64,7 @@ function FormModal({
           <div className="bg-white p-4 rounded-md w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%] relative">
             <Form />
             <div
-              className="absolute top-4 right-4 cursor-pointer"
+              className="absolute top-4 right-4 cursor-pointer border-2 hover:bg-slate-50 p-2 rounded-full w-7 h-7"
               onClick={() => setOpen(false)}
             >
               <Image src="/close.png" alt="" width={14} height={14} />
